@@ -9,13 +9,26 @@
 </head>
 <body>
 
-    @include('partials/header')
+    @include('partials.header')
 
-    @include('partials/main')
+    <main>
+        <div class="container">
+        <div class="current">CURRENT SERIES</div>
+        @foreach($lista as $comic)
+        <div class="card">
+            <a href="#">
+                <img src={{ $comic['thumb'] }} alt="cover" />
+                <p>{{ $comic['series'] }}</p>
+            </a>
+        </div>
+        @endforeach
+        </div>
+        <button>LOAD MORE</button>
+    </main>
 
-    @include('partials/topFooter')
+    @include('partials.topFooter')
 
-    @include('partials/footer')
+    @include('partials.footer')
     
 </body>
 </html>
