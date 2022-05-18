@@ -11,14 +11,11 @@
 
     @include('partials/header')
 
-    <main>
-        @yield('comicsList')
-        @yield('botMain')
-    </main>
+    @include('partials/main')
 
-    <footer>
-        @yield('footer')
-    </footer>
+    @include('partials/topFooter')
+
+    @include('partials/footer')
     
 </body>
 </html>

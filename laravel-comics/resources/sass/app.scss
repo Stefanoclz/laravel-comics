@@ -8,6 +8,22 @@
 header {
     background-color: white;
 
+    .top-header {
+        background-color: #0282f9;
+        display: flex;
+        justify-content: end;
+        padding-right: 500px;
+        color: white;
+        column-gap: 40px;
+        align-self: flex-end;
+
+        select {
+            border: none;
+            background-color: #0282f9;
+            color: white;
+        }
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -47,5 +63,172 @@ header {
 
     li:hover a {
         color: #0282f9;
+    }
+
+    .jumbo {
+        height: 400px;
+
+        img {
+            object-fit: cover;
+            object-position: top;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+main {
+    color: white;
+    background-color: #1c1c1c;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        width: 70%;
+        align-items: center;
+        padding: 50px 0px;
+        column-gap: 3%;
+        row-gap: 80px;
+        position: relative;
+
+        .current {
+            position: absolute;
+            left: 0;
+            top: -40px;
+            background-color: #097df6;
+            padding: 15px 20px;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+
+    }
+
+    button {
+        color: white;
+        padding: 10px 50px;
+        background-color: #097df6;
+        margin: 30px 0px;
+        border: 1px solid transparent;
+        transition-property: border-radius, background-color, border-color;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+
+        &:hover {
+            border-radius: 25px;
+            background-color: transparent;
+            border-color: white;
+        }
+    }
+}
+
+.top {
+    background-color: #0282f9;
+
+    .container {
+        display: flex;
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        padding: 40px 20px;
+        justify-content: space-evenly;
+
+        .merch {
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            color: white;
+
+            img {
+                width: 40px;
+            }
+
+            a {
+                font-size: 13px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+footer {
+    //background-image: url(../../public/images/footer-bg.jpg);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 70%;
+        text-align: center;
+
+        .info {
+            display: flex;
+            column-gap: 30px;
+        }
+
+        .link {
+            text-align: left;
+            padding: 60px 20px;
+
+            h3 {
+                color: white;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                margin-bottom: 10px;
+            }
+
+            li {
+                list-style-type: none;
+            }
+
+            a {
+                color: grey;
+                text-decoration: none;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .footerLogo {
+        //background-image: url(../../public/images/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50%;
+    }
+
+    .bot-footer {
+        background-color: #303030;
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        padding: 40px 0px;
+
+        button {
+            color: white;
+            background-color: transparent;
+            padding: 15px 10px;
+            border: 2px solid #097df6;
+            font-size: 18px;
+        }
+
+        h3 {
+            color: #097df6;
+            font-size: 20px;
+        }
+
+        .followUs {
+            display: flex;
+            column-gap: 25px;
+            align-items: center;
+        }
     }
 }

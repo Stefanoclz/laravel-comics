@@ -8,6 +8,23 @@ header {
   background-color: white;
 }
 
+header .top-header {
+  background-color: #0282f9;
+  display: flex;
+  justify-content: end;
+  padding-right: 500px;
+  color: white;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  align-self: flex-end;
+}
+
+header .top-header select {
+  border: none;
+  background-color: #0282f9;
+  color: white;
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
@@ -48,5 +65,172 @@ header .container a {
 
 header li:hover a {
   color: #0282f9;
+}
+
+header .jumbo {
+  height: 400px;
+}
+
+header .jumbo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  color: white;
+  background-color: #1c1c1c;
+}
+
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 70%;
+  align-items: center;
+  padding: 50px 0px;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  row-gap: 80px;
+  position: relative;
+}
+
+main .container .current {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  background-color: #097df6;
+  padding: 15px 20px;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+main button {
+  color: white;
+  padding: 10px 50px;
+  background-color: #097df6;
+  margin: 30px 0px;
+  border: 1px solid transparent;
+  transition-property: border-radius, background-color, border-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+main button:hover {
+  border-radius: 25px;
+  background-color: transparent;
+  border-color: white;
+}
+
+.top {
+  background-color: #0282f9;
+}
+
+.top .container {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  padding: 40px 20px;
+  justify-content: space-evenly;
+}
+
+.top .container .merch {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  color: white;
+}
+
+.top .container .merch img {
+  width: 40px;
+}
+
+.top .container .merch a {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+footer .container .info {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+footer .container .link {
+  text-align: left;
+  padding: 60px 20px;
+}
+
+footer .container .link h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+footer .container .link ul {
+  margin-bottom: 10px;
+}
+
+footer .container .link li {
+  list-style-type: none;
+}
+
+footer .container .link a {
+  color: grey;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+footer .footerLogo {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+}
+
+footer .bot-footer {
+  background-color: #303030;
+}
+
+footer .container-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  padding: 40px 0px;
+}
+
+footer .container-footer button {
+  color: white;
+  background-color: transparent;
+  padding: 15px 10px;
+  border: 2px solid #097df6;
+  font-size: 18px;
+}
+
+footer .container-footer h3 {
+  color: #097df6;
+  font-size: 20px;
+}
+
+footer .container-footer .followUs {
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  align-items: center;
 }
 

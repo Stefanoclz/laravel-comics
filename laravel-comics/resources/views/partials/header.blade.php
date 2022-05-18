@@ -1,11 +1,11 @@
 <header>
     <div class="top-header">
-        <h4>
+        <h6>
             DC POWER VISA
-        </h5>
+        </h6>
         <select name="" id="">
-            <option value="<H5>ADDITIONAL DC SITES"><H5>ADDITIONAL DC SITES</option>
-        </H5></select>
+            <option value="<H5>ADDITIONAL DC SITES"><H6>ADDITIONAL DC SITES</H6></option>
+        </select>
     </div>
     <div class="container">
       <img src="images/dc-logo.png" alt="DC logo" />
@@ -42,4 +42,8 @@
         </li>
       </ul>
     </div>
-  </header>
+
+    <div class="jumbo">
+      <img src="images/jumbotron.jpg" alt="jumbo" />
+    </div>
+ </header>
