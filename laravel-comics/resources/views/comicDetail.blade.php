@@ -112,7 +112,7 @@
 
     </div>
 
-    @include('partials.topFooter')
+    @include('partials.topFooterDetail')
 
     @include('partials.footer')
     

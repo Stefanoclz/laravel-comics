@@ -330,6 +330,43 @@ main .card a {
   text-decoration: none;
 }
 
+.topFooterDetail {
+  background-color: #f6f6f6;
+  color: grey;
+  margin-top: -20px;
+}
+
+.topFooterDetail .container {
+  display: flex;
+  margin: 0 auto;
+  width: 55%;
+  text-align: center;
+  padding: 40px 20px;
+  justify-content: space-evenly;
+}
+
+.topFooterDetail .container .merch {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 0px 20px;
+  color: grey;
+}
+
+.topFooterDetail .container .merch img {
+  width: 30px;
+  filter: invert(30%);
+}
+
+.topFooterDetail .container .merch a {
+  font-size: 13px;
+  color: grey;
+  text-decoration: none;
+}
+
 footer .container {
   display: flex;
   justify-content: space-between;

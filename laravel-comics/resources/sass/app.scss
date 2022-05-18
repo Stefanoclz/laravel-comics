@@ -325,6 +325,42 @@ main {
     }
 }
 
+.topFooterDetail {
+    background-color: #f6f6f6;
+    color: grey;
+    margin-top: -20px;
+
+    .container {
+        display: flex;
+        margin: 0 auto;
+        width: 55%;
+        text-align: center;
+        padding: 40px 20px;
+        justify-content: space-evenly;
+
+        .merch {
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            border-left: 1px solid lightgrey;
+            border-right: 1px solid lightgrey;
+            padding: 0px 20px;
+            color: grey;
+
+            img {
+                width: 30px;
+                filter: invert(30%);
+            }
+
+            a {
+                font-size: 13px;
+                color: grey;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 footer {
     //background-image: url(../../public/images/footer-bg.jpg);
 
