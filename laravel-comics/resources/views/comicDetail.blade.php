@@ -17,51 +17,100 @@
         </div>
 
         <div class="containerDetail">
-        <img class="imgDetail" src={{ $lista[0]['thumb'] }} alt="Comic">
+            <img class="imgDetail" src={{ $lista[0]['thumb'] }} alt="Comic">
 
-        <div class="infoComic">
+            <div class="infoComic">
 
-            <div class="description">
+                <div class="description">
 
-                <div class="title">
-                    <h1>{{ $lista[0]['title'] }}</h1>
-                </div>
-
-                <div class="infoPrice">
-                    <div class="price">
-                        <h5><span>U.S. Price: </span>{{ $lista[0]['price'] }}</h5>
-                        <h5><span>AVAILABLE</span></h5>
+                    <div class="title">
+                        <h1>{{ $lista[0]['title'] }}</h1>
                     </div>
-                    <div class="disponibility">
-                        <div>
-                            <select name="disponibility" id="">
-                                <option value="Check availability">Check availability</option>
-                                <option value="availabile">Availabile</option>
-                                <option value="Not availabile">Not availabile</option>
-                            </select>
+
+                    <div class="infoPrice">
+                        <div class="price">
+                            <h5><span>U.S. Price: </span>{{ $lista[0]['price'] }}</h5>
+                            <h5><span>AVAILABLE</span></h5>
                         </div>
-                    </div>                                 
+                        <div class="disponibility">
+                            <div>
+                                <select name="disponibility" id="">
+                                    <option value="Check availability">Check availability</option>
+                                    <option value="availabile">Availabile</option>
+                                    <option value="Not availabile">Not availabile</option>
+                                </select>
+                            </div>
+                        </div>                                 
+                    </div>
+
+                    <div class="plot">
+                        {{ $lista[0]['description'] }}
+                    </div>
                 </div>
 
-                <div class="plot">
-                    {{ $lista[0]['description'] }}
+                <div class="adv">
+                    <h5>ADVERTISEMENT</h5>
+                    <img src="images/adv.jpg" alt="adv">
                 </div>
             </div>
-
-            <div class="adv">
-                <h5>ADVERTISEMENT</h5>
-                <img src="images/adv.jpg" alt="adv">
-            </div>
-        </div>
         
-
-        <!-- BOT MAIN -->
-
-        <div class="botMain">
-            
-        </div>
-        
+        </div>     
     </main>
+
+    <!-- BOT MAIN -->  
+
+    <div class="botMain">
+
+        <div class="detail">
+
+            <div class="talent">
+                <div class="det">
+                    <h2>Talent</h2>
+                </div>
+                <div class="det">
+                    <h6>Art by:</h6>
+                    <div>
+                        @foreach($lista[0]['artists'] as $artist)
+                        <p><a href="">{{ $artist }}</a></p>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="det">
+                    <h6>Written by: </h6>
+                    <div>
+                        @foreach($lista[0]['writers'] as $writer)
+                        <p><a href="">{{ $writer }}</a></p>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+
+            <div class="specs">
+                <div class="det">
+                    <h2>Specs</h2>
+                </div>
+                <div class="det">
+                    <h6>Series: </h6>
+                    <div>
+                       <p><a href="">{{ $lista[0]['series'] }}</a></p>
+                    </div>
+                </div>
+                <div class="det">
+                    <h6>U.S. Price: </h6>
+                    <div>
+                        <p>{{ $lista[0]['price'] }}</p>
+                    </div>
+                </div>
+                <div class="det">
+                    <h6>On Sale Date: </h6>
+                    <div>
+                     <p>{{ $lista[0]['sale_date'] }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     @include('partials.topFooter')
 

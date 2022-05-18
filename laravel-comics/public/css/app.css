@@ -254,6 +254,51 @@ main .card a {
   color: black;
 }
 
+.botMain {
+  background-color: #f6f6f6;
+}
+
+.botMain .detail {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  width: 55%;
+  margin: 20px auto;
+}
+
+.botMain .detail .talent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 50%;
+}
+
+.botMain .detail .specs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 50%;
+}
+
+.botMain .detail .det {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+
+.botMain .detail .det p {
+  font-size: 12px;
+}
+
+.botMain .detail .det div {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .top {
   background-color: #0282f9;
 }
