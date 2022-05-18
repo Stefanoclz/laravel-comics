@@ -83,6 +83,7 @@ header .jumbo img {
 main {
   color: white;
   background-color: #1c1c1c;
+  text-align: center;
 }
 
 main .borderMain {
