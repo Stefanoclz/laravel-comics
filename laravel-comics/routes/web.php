@@ -17,3 +17,8 @@ Route::get('/', function () {
     include('../config/comics.php');
     return view('home', ["lista"=>$comics]);
 });
+
+Route::get('/comicDetail', function () {
+    include('../config/comics.php');
+    return view('comicDetail', ["lista"=>$comics]);
+});

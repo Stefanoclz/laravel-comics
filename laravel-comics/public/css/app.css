@@ -85,6 +85,11 @@ main {
   background-color: #1c1c1c;
 }
 
+main .borderMain {
+  background-color: #0282f9;
+  height: 100px;
+}
+
 main .container {
   display: flex;
   flex-wrap: wrap;
@@ -97,6 +102,13 @@ main .container {
        column-gap: 3%;
   row-gap: 80px;
   position: relative;
+}
+
+main .container .imgDetail {
+  position: absolute;
+  left: 150px;
+  top: -320px;
+  border: 1px solid white;
 }
 
 main .container .current {
@@ -150,6 +162,96 @@ main .card img {
 main .card a {
   text-decoration: none;
   color: white;
+}
+
+.mainDetail {
+  background-color: white;
+}
+
+.mainDetail .borderMain {
+  background-color: #0282f9;
+  height: 100px;
+}
+
+.mainDetail .containerDetail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 55%;
+  align-items: center;
+  padding: 50px 0px;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  row-gap: 80px;
+  position: relative;
+}
+
+.mainDetail .containerDetail .imgDetail {
+  position: absolute;
+  left: 0px;
+  top: -320px;
+  border: 1px solid white;
+}
+
+.mainDetail .containerDetail .infoComic {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.mainDetail .containerDetail .infoComic .description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.mainDetail .containerDetail .infoComic .description .title {
+  color: #003f5f;
+}
+
+.mainDetail .containerDetail .infoComic .description .infoPrice {
+  display: flex;
+  background-color: #55ba59;
+  height: 40px;
+  align-items: center;
+}
+
+.mainDetail .containerDetail .infoComic .description .infoPrice .price {
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-between;
+  border-right: 1px solid black;
+  width: 70%;
+}
+
+.mainDetail .containerDetail .infoComic .description .infoPrice .price span {
+  color: #abf995;
+}
+
+.mainDetail .containerDetail .infoComic .description .infoPrice .disponibility div {
+  margin-left: 20px;
+}
+
+.mainDetail .containerDetail .infoComic .description .infoPrice .disponibility select {
+  border: none;
+  color: white;
+  background-color: #55ba59;
+}
+
+.mainDetail .containerDetail .infoComic .description .plot {
+  color: black;
+  line-height: 25px;
+}
+
+.mainDetail .containerDetail .infoComic .adv {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainDetail .containerDetail .infoComic .adv h5 {
+  text-align: right;
+  color: black;
 }
 
 .top {

@@ -16,7 +16,7 @@
         <div class="current">CURRENT SERIES</div>
         @foreach($lista as $comic)
         <div class="card">
-            <a href="#">
+            <a href="/comicDetail">
                 <img src={{ $comic['thumb'] }} alt="cover" />
                 <p>{{ $comic['series'] }}</p>
             </a>
