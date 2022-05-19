@@ -368,6 +368,10 @@ main .card a {
   text-decoration: none;
 }
 
+footer {
+  background-image: url("/images/footer-bg.jpg");
+}
+
 footer .container {
   display: flex;
   justify-content: space-between;
@@ -407,6 +411,7 @@ footer .container .link a {
 }
 
 footer .footerLogo {
+  background-image: url("/images/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 50%;

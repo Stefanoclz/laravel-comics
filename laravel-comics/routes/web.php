@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('home', ["lista"=>$comics]);
 });
 
-Route::get('/comicDetail', function () {
+Route::get('/comicDetail/{id}', function ($id) {
     include('../config/comics.php');
-    return view('comicDetail', ["lista"=>$comics]);
+    return view('comicDetail', ["lista"=>$comics[$id]]);
 });

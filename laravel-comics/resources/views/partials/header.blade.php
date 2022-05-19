@@ -8,7 +8,7 @@
         </select>
     </div>
     <div class="container">
-      <img src="images/dc-logo.png" alt="DC logo" />
+      <img src="/images/dc-logo.png" alt="DC logo" />
       <ul>
         <li>
           <a href="#">CHARACTERS</a>
@@ -44,6 +44,6 @@
     </div>
 
     <div class="jumbo">
-      <img src="images/jumbotron.jpg" alt="jumbo" />
+      <img src="/images/jumbotron.jpg" alt="jumbo" />
     </div>
  </header>

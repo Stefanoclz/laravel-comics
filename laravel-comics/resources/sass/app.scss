@@ -363,7 +363,8 @@ main {
 }
 
 footer {
-    //background-image: url(../../public/images/footer-bg.jpg);
+    background-image: url('~/images/footer-bg.jpg');
+
 
     .container {
         display: flex;
@@ -403,7 +404,8 @@ footer {
     }
 
     .footerLogo {
-        //background-image: url(../../public/images/dc-logo-bg.png);
+        background-image: url('~/images/dc-logo-bg.png');
+
         background-repeat: no-repeat;
         background-position: center;
         width: 50%;
